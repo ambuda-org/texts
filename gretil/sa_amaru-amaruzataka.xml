@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sa_amaru-amaruzataka">
+  <teiHeader xml:lang="en">
+  <fileDesc>
+  <titleStmt>
+	<title>Amaruśataka</title>
+	<author>Amaru</author>
+	<respStmt>
+	 <resp>data entry</resp>
+	 <name>n.n.</name>
+	</respStmt>
+	<respStmt>
+	 <resp>contribution to GRETIL</resp>
+	 <name>n.n.</name>
+	</respStmt>
+	<respStmt>
+	 <resp>initial normalization and conversion to legacy GRETIL formats</resp>
+	 <name>Reinhold Grünendahl</name>
+	</respStmt>
+	<respStmt>
+	 <resp>normalization and conversion to TEI-conformant markup</resp>
+	 <name>Maximilian Mehner</name>
+	</respStmt>
+	<respStmt>
+	 <resp>normalization to Ambuda-conformant TEI markup </resp>
+	 <name>Kiran L A</name>
+	</respStmt>
+  </titleStmt>
+
+  <publicationStmt>
+	<publisher>Göttingen Register of Electronic Texts in Indian Languages (GRETIL), SUB Göttingen</publisher>
+	<availability>
+	 <p>This e-text was provided to GRETIL in good faith that no copyright rights have been infringed.
+	 If anyone wishes to assert copyright over this file, please contact the GRETIL management at <email>gretil(at)sub(dot)uni-goettingen(dot)de</email>.
+	 The file will be immediately removed pending resolution of the claim.</p>
+
+	 <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</licence>
+	</availability>
+	<date when-iso="2020-07-31"/>
+  </publicationStmt>
+
+  <notesStmt>
+	<note>This file has been created by mass conversion of GRETIL's Sanskrit corpus from <ref target="http://gretil.sub.uni-goettingen.de/gretil/1_sanskr/5_poetry/2_kavya/amaru_u.htm">amaru_u.htm</ref>. Due to the heterogeneity of the sources the header markup might be suboptimal. For the sake of transparency the header of the legacy file is documented in the <gi>note</gi> element below:</note>
+	<note type="legacyheader">
+	 Amaru: Amarusataka
+<lb/>
+<lb/>Input by ...
+	</note>
+  </notesStmt>
+
+  <sourceDesc>
+	<bibl></bibl>
+  </sourceDesc>
+  </fileDesc>
+
+  <encodingDesc>
+  <projectDesc>
+	<p>The Göttingen Register of Electronic Texts in Indian Languages (GRETIL) is a resource platform providing standardized machine-readable texts in Indian languages that have been contributed by various individuals and institutions.</p>
+  </projectDesc>
+
+  <editorialDecl>
+	<correction>
+	 <p>Apparent errors have been silently corrected.</p>
+	</correction>
+
+	<normalization>
+	 <p>GRETIL normalizes all texts contributed consistently for each language.
+	 Sanskrit texts are normalized in accordance with the scheme of the International Alphabet of Sanskrit Transliteration (IAST) in order to facilitate word search across its corpus without additional transformations.</p>
+
+	 <p>All characters that were fully equivalent to an IAST-conformant character in the text file contributed have been made to conform to the character list below.
+	 Non-conformant characters with additional information including accents, capitalization, and whitespace have been preserved as <gi>orig</gi> elements inside <gi>choice</gi> elements with their IAST-conformant equivalent in <gi>reg</gi> elements for the creation of a plain text.
+	 These additional informations will be available only in those transformations of this file that display the original information.</p>
+
+	 <p><table>
+	 <head>Characters Used for the Transliteration of Sanskrit according to IAST</head>
+	 <row role="label">
+	 <cell>Character</cell>
+	 <cell>Character Name</cell>
+	 <cell>Unicode Code Point</cell>
+	 </row>
+	 <row>
+	 <cell>a</cell>
+	 <cell>LATIN SMALL LETTER A</cell>
+	 <cell>U+0061</cell>
+	 </row>
+	 <row>
+	 <cell>ā</cell>
+	 <cell>LATIN SMALL LETTER A WITH MACRON</cell>
+	 <cell>U+0101</cell>
+	 </row>
+	 <row>
+	 <cell>i</cell>
+	 <cell>LATIN SMALL LETTER I</cell>
+	 <cell>U+0069</cell>
+	 </row>
+	 <row>
+	 <cell>ī</cell>
+	 <cell>LATIN SMALL LETTER I WITH MACRON</cell>
+	 <cell>U+012B</cell>
+	 </row>
+	 <row>
+	 <cell>u</cell>
+	 <cell>LATIN SMALL LETTER U</cell>
+	 <cell>U+0075</cell>
+	 </row>
+	 <row>
+	 <cell>ū</cell>
+	 <cell>LATIN SMALL LETTER U WITH MACRON</cell>
+	 <cell>U+016B</cell>
+	 </row>
+	 <row>
+	 <cell>ṛ</cell>
+	 <cell>LATIN SMALL LETTER R WITH DOT BELOW</cell>
+	 <cell>U+1E5B</cell>
+	 </row>
+	 <row>
+	 <cell>ṝ</cell>
+	 <cell>LATIN SMALL LETTER R WITH DOT BELOW AND MACRON</cell>
+	 <cell>U+1E5D</cell>
+	 </row>
+	 <row>
+	 <cell>ḷ</cell>
+	 <cell>LATIN SMALL LETTER L WITH DOT BELOW</cell>
+	 <cell>U+1E37</cell>
+	 </row>
+	 <row>
+	 <cell>ḹ</cell>
+	 <cell>LATIN SMALL LETTER L WITH DOT BELOW AND MACRON</cell>
+	 <cell>U+1E39</cell>
+	 </row>
+	 <row>
+	 <cell>e</cell>
+	 <cell>LATIN SMALL LETTER E</cell>
+	 <cell>U+0065</cell>
+	 </row>
+	 <row>
+	 <cell>o</cell>
+	 <cell>LATIN SMALL LETTER O</cell>
+	 <cell>U+006F</cell>
+	 </row>
+	 <row>
+	 <cell>ṃ</cell>
+	 <cell>LATIN SMALL LETTER M WITH DOT BELOW</cell>
+	 <cell>U+1E43</cell>
+	 </row>
+	 <row>
+	 <cell>ḥ</cell>
+	 <cell>LATIN SMALL LETTER H WITH DOT BELOW</cell>
+	 <cell>U+1E25</cell>
+	 </row>
+	 <row>
+	 <cell>'</cell>
+	 <cell>APOSTROPHE</cell>
+	 <cell>U+0027</cell>
+	 </row>
+	 <row>
+	 <cell>k</cell>
+	 <cell>LATIN SMALL LETTER K</cell>
+	 <cell>U+006B</cell>
+	 </row>
+	 <row>
+	 <cell>g</cell>
+	 <cell>LATIN SMALL LETTER G</cell>
+	 <cell>U+0067</cell>
+	 </row>
+	 <row>
+	 <cell>ṅ</cell>
+	 <cell>LATIN SMALL LETTER N WITH DOT ABOVE</cell>
+	 <cell>U+1E45</cell>
+	 </row>
+	 <row>
+	 <cell>c</cell>
+	 <cell>LATIN SMALL LETTER C</cell>
+	 <cell>U+0063</cell>
+	 </row>
+	 <row>
+	 <cell>j</cell>
+	 <cell>LATIN SMALL LETTER J</cell>
+	 <cell>U+006A</cell>
+	 </row>
+	 <row>
+	 <cell>ñ</cell>
+	 <cell>LATIN SMALL LETTER N WITH TILDE</cell>
+	 <cell>U+00F1</cell>
+	 </row>
+	 <row>
+	 <cell>ṭ</cell>
+	 <cell>LATIN SMALL LETTER T WITH DOT BELOW</cell>
+	 <cell>U+1E6D</cell>
+	 </row>
+	 <row>
+	 <cell>ḍ</cell>
+	 <cell>LATIN SMALL LETTER D WITH DOT BELOW</cell>
+	 <cell>U+1E0D</cell>
+	 </row>
+	 <row>
+	 <cell>ṇ</cell>
+	 <cell>LATIN SMALL LETTER N WITH DOT BELOW</cell>
+	 <cell>U+1E47</cell>
+	 </row>
+	 <row>
+	 <cell>p</cell>
+	 <cell>LATIN SMALL LETTER P</cell>
+	 <cell>U+0070</cell>
+	 </row>
+	 <row>
+	 <cell>b</cell>
+	 <cell>LATIN SMALL LETTER B</cell>
+	 <cell>U+0062</cell>
+	 </row>
+	 <row>
+	 <cell>m</cell>
+	 <cell>LATIN SMALL LETTER M</cell>
+	 <cell>U+006D</cell>
+	 </row>
+	 <row>
+	 <cell>y</cell>
+	 <cell>LATIN SMALL LETTER Y</cell>
+	 <cell>U+0079</cell>
+	 </row>
+	 <row>
+	 <cell>r</cell>
+	 <cell>LATIN SMALL LETTER R</cell>
+	 <cell>U+0072</cell>
+	 </row>
+	 <row>
+	 <cell>l</cell>
+	 <cell>LATIN SMALL LETTER L</cell>
+	 <cell>U+006C</cell>
+	 </row>
+	 <row>
+	 <cell>v</cell>
+	 <cell>LATIN SMALL LETTER V</cell>
+	 <cell>U+0076</cell>
+	 </row>
+	 <row>
+	 <cell>ś</cell>
+	 <cell>LATIN SMALL LETTER S WITH ACUTE</cell>
+	 <cell>U+x015B</cell>
+	 </row>
+	 <row>
+	 <cell>ṣ</cell>
+	 <cell>LATIN SMALL LETTER S WITH DOT BELOW</cell>
+	 <cell>U+1E63</cell>
+	 </row>
+	 <row>
+	 <cell>s</cell>
+	 <cell>LATIN SMALL LETTER S</cell>
+	 <cell>U+0073</cell>
+	 </row>
+	 <row>
+	 <cell>h</cell>
+	 <cell>LATIN SMALL LETTER H</cell>
+	 <cell>U+0068</cell>
+	 </row>
+	 </table>
+	</p>
+  </normalization>
+
+  <quotation marks="some">
+	<p>If indicated unambiguously in the text file contributed quotation marks have been replaced with the <gi>q</gi> element and, in case a reference was provided, have been nested inside a <gi>cit</gi> with the respective reference provided in a <gi>ref</gi> element after the quote.</p>
+  </quotation>
+
+  <segmentation>
+	<p>Unnumbered <gi>div</gi> elements are used to structure the text, using the <att>type</att> and <att>n</att> attributes in accordance with the <gi>refsDecl</gi>.</p>
+  </segmentation>
+
+  <interpretation>
+	<p>Interpretive markup which is visible only in analytic transformations of this file consists of:
+	<list>
+	 <item>Highlighting in <gi>hi</gi> elements,</item>
+	 <item>Corruptions in <gi>sic</gi> elements,</item>
+	 <item>Remarks in <gi>note</gi> elements with the @resp attribute identifying the agency.</item>
+	</list></p>
+  </interpretation>
+  </editorialDecl>
+
+  <refsDecl>
+  <p>A reference is given in the <att>xml:id</att> attributes consisting of
+  <list>
+	<item>a pragmatic abbreviation of the <label>title</label>: Amaruśataka = <!-- abbreviation -->,</item>
+	<item>the number of the <label></label> in arabic numerals,</item>
+	<item>the number of the <label>verse</label> in arabic numerals.</item>
+  </list>
+  </p>
+  </refsDecl>
+  </encodingDesc>
+
+  <profileDesc>
+  <langUsage>
+  <language ident="en">English</language>
+  <language ident="sa-Latn">Sanskrit</language>
+  </langUsage>
+
+  <textClass>
+  <keywords scheme="http://gretil.sub.uni-goettingen.de/">
+	<term>Sanskrit -- Poetry -- Kāvya</term>
+  </keywords>
+  </textClass>
+  </profileDesc>
+
+  <revisionDesc>
+  <listChange>
+  <change when-iso="2020-07-31" who="Maximilian Mehner">TEI encoding by mass conversion of GRETIL's Sanskrit corpus</change>
+  </listChange>
+  </revisionDesc>
+
+</teiHeader>
+
+<text xml:lang="sa-Latn" xml:id="AmrShtk">
+  <body>
+
+<note>Text
+Abbreviations</note>
+
+<note>This edition is based on the one in Kāvya-saṅgraha edited by Jīvānanda
+Vidyāsāgara. It has been compared with the Motilal Banarsidass edition (1983)
+containing the commentary of Arjunavarmadeva. The number in parentheses at the
+end of the last line of each verse is the number of the verse in the Motilal
+edition. There seems to be a great deal of variation in the order and numbering
+of the verses between the editions and the commentators. The order of the verses
+found in the Kāvya-saṅgraha forms the backbone of the order of the verses
+presented here, even though Arjunavarmadeva considers some of the verses found
+in that edition to be interpolations. Those suspect verses have been noted in
+the footnotes.</note>
+
+<note>The parentheses in between verses contain citations for the major
+anthologies. These have been taken from Sures Chandra Banerji's
+edition of Śrīdharadāsa's Sadukti-karṇāmṛta. The abbreviations for those
+anthologies are the following:</note>
+
+<note>su. = subhāṣitaratnakoṣa,
+sad. = saduktikarṇāmṛta,
+subh. = subhāṣitāvalī,
+sū. = sūktimuktāvalī,
+pad. = padyāvalī,
+śā. = śārṅgadharapaddhati</note>
+
+<note>(These equivalences have been taken from the Banerji edition of Sad-ukti-karṇāmṛta and the De edition of Padyāvalī.)</note>
+
+<note>Main Text</note>
+
+<lg xml:id="AmrShtk.1"><l>jyākṛṣṭibaddhakhaṭakāmukhapāṇipṛṣṭha-</l>
+<l>preṅkhannakhāṃśucayasaṃvalito'mbikāyāḥ |</l>
+<l>tvāṃ pātu mañjaritapallavakarṇapūra-</l>
+<l>lobhabhramadbhramaravibhramabhṛtkaṭākṣaḥ ||1||</l><note>(1)</note></lg>
+
+<note>(su. 100, sad. 123)</note>
+
+<lg xml:id="AmrShtk.2"><l>kṣipto hastāvalagnaḥ prasabhamabhihato'pyādadānoṃśukāntaṃ</l>
+<l>gṛhṇan keśeṣvapāstaścaraṇanipatito nekṣitaḥ sambhrameṇa |</l>
+<l>āliṅgan yo'vadhūtastripurayuvatibhiḥ sāśrunetrotpalābhiḥ</l>
+<l>kāmīvārdrāparādhaḥ sa dahatu duritaṃ śāmbhavo vaḥ śarāgniḥ ||2||</l> <note>(2)</note></lg>
+
+<note>(harabāṇaḥ; su. 49, sad. 76)</note>
+
+<lg xml:id="AmrShtk.3"><l>ālolāmalakāvalīṃ vilulitāṃ bibhraccalatkuṇḍalaṃ</l>
+<l>kiñcinmṛṣṭaviśeṣakaṃ tanutaraiḥ khedāmbhasāṃ śīkaraiḥ |</l>
+<l>tanvyā yatsuratāntatāntanayanaṃ vaktraṃ rativyatyaye</l>
+<l>tattvāṃ pātu cirāya kiṃ hariharabrahmādibhirdaivataiḥ ||3||</l> <note>(3)</note></lg>
+
+<note>(viparītaratam- sad. 1141, śā. 3702)</note>
+
+<lg xml:id="AmrShtk.4"><l>alasavalitaiḥ premārdrārdrairmuhurmukulīkṛtaiḥ</l>
+<l>kṣaṇamabhimukhairlajjālolairnimeṣaparāṅmukhaiḥ |</l>
+<l>hṛdayanihitaṃ bhāvākūtaṃ vamadbhirivekṣaṇaiḥ</l>
+<l>kathaya sukṛtī ko'yaṃ mugdhe tvayādya vilokyate ||4||</l> <note>(4)</note></lg>
+
+<note>(vāsakasajjā; su. 508; sad. 658)</note>
+
+<lg xml:id="AmrShtk.5"><l>datto'syāḥ praṇayastvayaiva bhavatā ceyaṃ ciraṃ lālitā</l>
+<l>daivād adya kila tvameva kṛtavān asyā navaṃ vipriyam |</l>
+<l>manyurduḥsaha eṣa yātyupaśamaṃ no sāntvavādaiḥ sphuṭaṃ</l>
+<l>he nistraṃśa vimuktakaṇṭhakaruṇaṃ tāvatsakhī roditu ||5||</l> <note>(6)</note></lg>
+
+<lg xml:id="AmrShtk.6"><l>likhannāste bhūmiṃ bahiravanataḥ prāṇadayito</l>
+<l>nirāhārāḥ skahyaḥ satataruditocchūṇanayanāḥ |</l>
+<l>parityaktaṃ sarvaṃ hasitapaṭhitaṃ pañjaraśukais</l>
+<l>tavāvasthā ceyaṃ visṛja kaṭhine mānamadhunā ||6||</l> <note>(7)</note></lg>
+
+<note>(sakhīprabodhaḥ; sad. 713, rasārṇavasudhākara 2.206a)</note>
+
+<lg xml:id="AmrShtk.7"><l>nāryastanvi haṭhāddharanti ramaṇaṃ tiṣṭhanti no vāritās</l>
+<l>tatkiṃ tāmyasi kiṃ ca rodiṣi mudhā tāsāṃ priyaṃ mā kṛthāḥ |</l>
+<l>kāntaḥ keliruciryuvā sahṛdayastādṛkpatiḥ kātarae</l>
+<l>kiṃ no barkarakarkaraiḥ priyaśatairākramya vikrīyate ||7||</l><note>(8)</note></lg>
+
+<note type="footnote">*motīlāla-banārsīdāsa-sampādane (1983):
+nāryo mugdhaśaṭhā haranti ramaṇaṃ tiṣṭhanti no vāritās</note>
+
+<lg xml:id="AmrShtk.8">
+<l>kopātkomalalolabāhulatikāpāśena baddhā dṛḍhaṃ</l>
+<l>nītvā keliniketanaṃ dayitayā sāyaṃ sakhīnāṃ puraḥ |</l>
+<l>bhūyo'pyevamiti skhalan mṛdugirā saṃsūcya duśceṣṭitaṃ</l>
+<l>dhanyo hanyata eva nihnutiparaḥ preyān rudatyā hasan ||8||</l> <note>(9)</note></lg>
+
+<note>(śaṭhanāyakaḥ, sad. 882, sū. 85.3, subh. 1351)</note>
+
+<lg xml:id="AmrShtk.9"><l>praharaviratau madhye vāhnastato'pi pare'thavā</l>
+<l>kimuta sakale jāte vāhnipriya tvamihaiṣyasi |</l>
+<l>iti dinaśataprāpyaṃ deśaṃ priyasya yiyāsato</l>
+<l>harati gamanaṃ bālālāpaiḥ sabāṣpagalajjalaiḥ ||9||</l> <note>(12)</note></lg>
+
+<note>(prasthānabhaṅgaḥ - su. 532, sad. 921, subh. 1048, śā. 3389, sū. 37.7)</note>
+
+<lg xml:id="AmrShtk.10"><l>yātāḥ kiṃ na milanti sundari punaścintā tvayā matkṛte</l>
+<l>no kāryā nitarāṃ kṛśāmi kathayatyevaṃ sabāṣpe mayi |</l>
+<l>lajjāmantharatārakeṇa nipataddhārāśruṇā cakṣuṣā</l>
+<l>dṛṣṭvā māṃ hāsitena bhāvimaraṇotsāhastayā sūcitaḥ ||10||</l><note>(10)</note></lg>
+
+<lg xml:id="AmrShtk.11"><l>dhīraṃ vāridharasya vāri kirataḥ śrutvā niśīthe dhvaniṃ</l>
+<l>dīrghocchvāsamudaśruṇā virahiṇīṃ bālāṃ ciraṃ dhyāyatā |</l>
+<l>adhvanyena vimuktakaṇṭhamakhilāṃ rātriṃ tathā kranditaṃ</l>
+<l>grāmīṇairvrajato janasya vasatirgrāme niṣiddhā yathā ||11||</l><note>(13)</note></lg>
+
+<note>(varṣāpathikaḥ, sad. 915)</note>
+
+<lg xml:id="AmrShtk.12"><l>kathamapi sakhi krīḍākopād vrajeti mayodite</l>
+<l>kaṭhinahṛdayastyaktvā śayyāṃ balād gata eva saḥ |</l>
+<l>iti sarabhasaṃ dhvastapremṇi vyapetaghṛṇe jane</l>
+<l>punarapi hatavrīḍaṃ cetaḥ prayāti karomi kim ||12||</l><note>(15)</note></lg>
+
+<lg xml:id="AmrShtk.13"><l>dampatyorniśi jalpatorgṛhaśukenākarṇitaṃ yadvacas</l>
+<l>tatprātargurusannidhau nigadatastasyopahāraṃ vadhūḥ |</l>
+<l>karṇālaṅkṛtipadmarāgaśakalaṃ vinyasya cañcūpuṭe</l>
+<l>vrīḍārtā prakaroti dāḍimaphalavyājena vāgbandhanam ||13||</l> <note>(16)</note></lg>
+
+<note>(śukoktivrīḍā, kuval. 173, su. 621, sad. 1180, subh. 2214, śā. 3743)</note>
+
+<lg xml:id="AmrShtk.14"><l>ajñānena parāṅmukhīṃ paribhavād āśliṣya māṃ duḥkhitāṃ</l>
+<l>kiṃ labdhaṃ caṭula tvayeha nayatā saubhāgyametāṃ daśām |</l>
+<l>paśyaitad dayitākucavyatikaron mṛṣṭāṅgarāgāruṇaṃ</l>
+<l>vakṣaste malatailapaṅkaśavalairveṇīpadairaṅkitam ||14||</l><note>(17)</note></lg>
+
+<note>(khaṇḍitā)</note>
+
+<lg xml:id="AmrShtk.15"><l>ekatrāsanasaṃsthitiḥ parihatā pratudgamād dūratas</l>
+<l>tāmbūlānayanacchalena rabhasāśelṣo'pi saṃvighnitaḥ |</l>
+<l>ālāpo'pi na miśritaḥ parijanaṃ vyāpārayantyāntike</l>
+<l>kāntaṃ pratyupacārataścaturayā kopaḥ kṛtārthīkṛtaḥ ||15||</l> <note>(18)</note></lg>
+
+<note>(māninī, sad. 692, rasārṇavasudhākara 2.67g)</note>
+
+<lg xml:id="AmrShtk.16"><l>dṛṣṭvaikāsanasaṃsthite priyatame paścād upetyādarād</l>
+<l>ekasyā nayane pidyāya vihitakrīḍānubandhacchalaḥ |</l>
+<l>īṣadvakrimakandharaḥ sapulakaḥ premollasanmānasām</l>
+<l>antarhāsalasatkapolaphalakāṃ dhūrto'parāṃ cumbati ||16||</l><note>(19)</note></lg>
+
+<note>(śaṭhanāyakaḥ, su. 603, sad. 881)</note>
+
+<lg xml:id="AmrShtk.17"><l>caraṇapatanapratyākhyānātprasādaparāṅmukhe</l>
+<l>nibhṛtakitavācāretyuktvā ruṣā puruṣīkṛte |</l>
+<l>vrajati ramaṇe niḥśvasyoccaiḥ stanasthitahastayā</l>
+<l>nayanasalilacchannā dṛṣṭiḥ sakhīṣu niveśitā ||17||</l><note>(20)</note></lg>
+
+<note>(mānināyakaḥ, sad. 896)</note>
+
+<lg xml:id="AmrShtk.18"><l>kāñcyā gāḍhatarāvaruddhavasanaprāntā kimarthaṃ punar</l>
+<l>mugdhākṣī svaiptīti tatparijanaṃ svairaṃ priye pṛcchati |</l>
+<l>mātaḥ svaptumapīha vārayati māmityāhitakrodhayā</l>
+<l>paryasya svapiticchalena śayane datto'vakāśastayā ||18||</l><note>(21)</note></lg>
+
+<note>(śayanādhirohanam, sad. 1094, subh. 2081, sū. 77.11)</note>
+
+<lg xml:id="AmrShtk.19"><l>ekasmiñśayane parāṅmukhatayā vītottaraṃ tāmyator</l>
+<l>anyonyasya hṛdi sthite'pyanunaye saṃrakṣatorgauravam |</l>
+<l>dampatyoḥ śanakairapāṅgavalanān miśrībhavaccakṣuṣor</l>
+<l>bhagno mānakaliḥ sahāsarabhasaṃ vyāsaktakaṇṭhagraham ||19||</l><note>(23)</note></lg>
+
+<note>(mānabhaṅgaḥ, sad. 723)</note>
+
+<lg xml:id="AmrShtk.20"><l>paśyāmo mayi kiṃ prapadyata iti sthairyaṃ mayālambitaṃ</l>
+<l>kiṃ māmālapatītyayaṃ khala śaṭhaḥ kopastayāpyāśritaḥ |</l>
+<l>ityanyonyavilakṣadṛṣṭicature tasminnavasthāntare</l>
+<l>savyājaṃ hasitaṃ mayā dhṛtiharo bāṣpastu muktastayā ||20||</l><note>(24)</note></lg>
+
+<note>(uccāvacaṃ, kuval., 185; sad. 1366)</note>
+
+<lg xml:id="AmrShtk.21"><l>parimlāne māne mukhaśaśini tasyāḥ karadhṛte</l>
+<l>mayi kṣīṇopāye praṇipatanamātraikaśaraṇe |</l>
+<l>tayā pakṣmaprāntavrajapuṭaniruddhena sahasā</l>
+<l>prasādo bāṣpena stanataṭaviśīrṇena kathitaḥ ||21||</l>(25)</lg>
+
+<note>(uccāvacaṃ, sad. 1367, subh. 1608, sū. 58.1)</note>
+
+<lg xml:id="AmrShtk.22"><l>tasyāḥ sāndravilepanastanataṭapraśleṣamudrāṅkitaṃ</l>
+<l>kiṃ vakṣaścaraṇānativyatikaravyājena gopāyyate |</l>
+<l>ityukte kva tad ityudīrya sahasā tatsampramārṣṭuṃ mayā</l>
+<l>sāśliṣṭā rabhasena tatsukhavaśāttanvyāpi tad vismṛtam ||22||</l><note>(26)</note></lg>
+
+<lg xml:id="AmrShtk.23"><l>tvaṃ mugdhākṣi vinaiva kañculikayā dhatse manohāriṇīṃ</l>
+<l>lakṣmīmityabhidhāyini priyatame tadvīṭikāṃ saṃspṛśi |</l>
+<l>śayyopāntaniviṣṭasasmitamukhīnetrotsavānandito</l>
+<l>niryātaḥ śanakairalīkavacanopanyāsamālījanaḥ ||23||</l><note>(27)</note></lg>
+<lg xml:id="AmrShtk.24"><l>bhrūbhaṅge racite'pi dṛṣṭiradhikaṃ sotkaṇṭhamudvīkṣate</l>
+<l>kārkaśyaṃ gamite'pi cetasi tanūromāñcamālambate |</l>
+<l>ruddhāyāmapi vāci sasmitamidaṃ dagdhānanaṃ jāyate</l>
+<l>dṛṣṭe nirvahaṇaṃ bhaviṣyati kathaṃ mānasya tasmiñjane ||24||</l><note>(28)</note></lg>
+
+<note>(anuraktamāninī, su. 695, sad. 702, subh. 1580; uṇ. 5.25)</note>
+
+<lg xml:id="AmrShtk.25">
+<l>kānte katyapi vāsarāṇi gamaya tvaṃ mīlayitvā dṛśau</l>
+<l>svasti svasti nimīlayāmi nayane yāvan na śūnyā diśaḥ |</l>
+<l>āyātā vayamāgamiṣyati suhṛdvargasya bhāgyodayaiḥ</l>
+<l>sandeśo vada kastavābhilaṣitastīrtheṣu toyāñjaliḥ ||25||</l>
+</lg>
+
+<note>(yātrākṣepaḥ, sad.731 (vīrasya))</note>
+
+<lg xml:id="AmrShtk.26"><l>sā patyuḥ prathamāparādhasamaye sakhyopadeśaṃ vinā</l>
+<l>no jānāti savibhramāṅgavalanāvakroktisaṃsūcanam |</l>
+<l>svacchairacchakapolamūlagalitaiḥ paryastanetrotpalā</l>
+<l>bālā kevalameva roditi luṭhallolālakairaśrubhiḥ ||26||</l><note>(29)</note></lg>
+
+<note>(mugdhā; sad.498)</note>
+
+<lg xml:id="AmrShtk.27"><l>bhavatu viditaṃ chadmālāpairalaṃ priya gamyatāṃ</l>
+<l>tanurapi na te doṣo'smākaṃ vidhistu parāṅmukhaḥ |</l>
+<l>tava yathā tathābhūtaṃ prema prapannamimāṃ daśāṃ</l>
+<l>prakṛticapale kā naḥ pīḍā gate hatajīvite ||27||</l> <note>(30)</note></lg>
+
+<note>(māninīvākyam; sad. 708; pad. 223)</note>
+
+<lg xml:id="AmrShtk.28"><l>urasi nihitastāro hāraḥ kṛtā jaghane ghane</l>
+<l>kalakalavatī kāñcī pādau kvaṇanmaṇinūpurau |</l>
+<l>priyamabhisarasyevaṃ mugdhe samāhataḍiṇḍimā</l>
+<l>yadi kimadhikatrāsotkampaṃ diśaḥ samudīkṣase ||28||</l><note>(31)</note></lg>
+
+<lg xml:id="AmrShtk.29"><l>prātaḥ prātarupāgatena janitā nirnidritā cakṣuṣor</l>
+<l>mandāyāṃ mayi gauravavyapagamād utpāditaṃ lāghavam |</l>
+<l>kiṃ mugdhe na mayā kṛtaṃ ramaṇadhīrmuktā tvayā gamyatāṃ</l>
+<l>dusthaṃ tiṣṭhasi yacca pathyamadhunā kartāsmi tacchroṣyasi ||29||</l><note>(33)</note></lg>
+
+<lg xml:id="AmrShtk.30"><l>sā bālā vayamapragalbhamanasaḥ sā strī vayaṃ kātarāḥ</l>
+<l>sā pīnonnatimatpayodharayugaṃ dhatte sakhedā vayam |</l>
+<l>sākrāntā jaghanasthalena guruṇā gantuṃ na śaktā vayaṃ</l>
+<l>doṣairanyajanāśritairapaṭavo jātāḥ sma ityadbhutam ||30||</l><note>(34)</note></lg>
+
+<note>(anukūlanāyakaḥ, su. 481, sad. 872, subh. 1346, s.k. 3.42)</note>
+<lg xml:id="AmrShtk.31"><l>prasthānaṃ valayaiḥ kṛtaṃ priyasakhairajasraṃ gataṃ</l>
+<l>dhṛtyā na kṣaṇamāsitaṃ vyavasitaṃ cittena gantuṃ puraḥ |</l>
+<l>gantuṃ niścitacetasi priyatame sarve samaṃ prasthitā</l>
+<l>gantavye sati jīvitapriyasuhṛtsārthaḥ kimu tyajyate ||31||</l> <note>(35)</note></lg>
+
+<note>(proṣitabhartṛkāvacanam; subh. 1151; śā. 3424; sad. 741; sū. 37.19)</note>
+
+<lg xml:id="AmrShtk.32"><l>sandaṣṭādharapallavā sacakitaṃ hastāgramādhunvatī</l>
+<l>māmāmuñca śaṭheti kopavacanairānartitabhrūlatā |</l>
+<l>śītkārāñcitalocanā sarabhasaṃ yaiścumbitā māninī</l>
+<l>prāptaṃ tairamṛtaṃ mudhaiva mathito mūḍhaiḥ suraiḥ sāgaraḥ ||32||</l><note>(36)</note></lg>
+
+<note>(cumbanam, sad. 1105, subh. 1303, śā. 3668)</note>
+
+<lg xml:id="AmrShtk.33"><l>supto'yaṃ sakhi supyatāmiti gatāḥ sakhyastato'nantaraṃ</l>
+<l>premāvāsitayā mayā saralayā nyastaṃ mukhaṃ tanmukhe |</l>
+<l>jñāte'līkanimīlane nayanayordhūrtasya romāñcito</l>
+<l>lajjāsīn mama tena sāpyapahṛtā tatkālayogyaiḥ kramaiḥ ||33||</l><note>(37)</note></lg>
+
+<lg xml:id="AmrShtk.34"><l>kopo yatra bhrūkuṭiracanā nigraho yatra maunaṃ</l>
+<l>yatrānyonyasmitamanunayo yatra dṛṣṭiḥ prasādaḥ |</l>
+<l>tasya premṇastad idamadhunā vaiṣamaṃ paśya jātaṃ</l>
+<l>tvaṃ pādānte luṭhasi nahi me manyumokṣaḥ khalāyāḥ ||34||</l><note>(38)</note></lg>
+
+<note>(nāyake māninī, sad. 709)</note>
+
+<lg xml:id="AmrShtk.35"><l>sutanu jahihi kopaṃ paśya pādānataṃ māṃ</l>
+<l>na khalu tava kadācitkopa evaṃ vidho'bhūt |</l>
+<l>iti nigadati nāthe tiryagāmīlitākṣyā</l>
+<l>nayanajalamanalpaṃ muktamuktaṃ na kiñcit ||35||</l><note>(39)</note></lg>
+
+<note>(mānabhaṅgaḥ, sad. 725)</note>
+
+<lg xml:id="AmrShtk.36"><l>gāḍhāliṅganavāmanīkṛtakucaprodbhinnaromodgamā</l>
+<l>sāndrasneharasātirekavigalatśrīmannitambāmbarā |</l>
+<l>mā mā mānada māti māmalamiti kṣāmākṣarollāpinī</l>
+<l>suptā kiṃ nu mṛtā nu kiṃ manasi me līnā vilīnā nu kim ||36||</l><note>(40)</note></lg>
+
+<lg xml:id="AmrShtk.37"><l>paṭālagne patyau namayati mukhaṃ jātavinayā</l>
+<l>haṭhāśleṣaṃ vāñchatyapaharati gātrāṇi nibhṛtam |</l>
+<l>na śaknotyākhyātuṃ smitamukhasakhīdattanayanā</l>
+<l>hriyā tāmyatyantaḥ prathamaparihāse navavadhūḥ ||37||</l><note>(41)</note></lg>
+
+<note>(navoḍhā; sad. 512, subh. 2056, śā. 3673; viṣṇudās u.ṇ. 5.19)</note>
+
+<lg xml:id="AmrShtk.38"><l>gate premābandhe praṇayabahumāne vigalite</l>
+<l>nivṛtte sadbhāve jana iva jane gacchati puraḥ |</l>
+<l>tad utprekṣyotprekṣya priyasakhi gatāṃstāṃśca divasān</l>
+<l>na jāne ko heturdalati śatadhā yan na hṛdayam ||38||</l><note>(43)</note></lg>
+
+<note>(uccāvacaṃ, su. 697, sad. 1368, subh. 1141, śā. 3545, sū. 84.1, rasārṇavasudhākara 2.263c)</note>
+
+<lg xml:id="AmrShtk.39"><l>ciravirahiṇorutkaṇṭhārtiślathīkṛtagātrayor</l>
+<l>navamiva jagaj jātaṃ bhūyaścirād abhinandatoḥ |</l>
+<l>kathamapi dine dīrghe yāte niśāmadhirūḍhayoḥ</l>
+<l>prasarati kathā bahvī yūnoryathā na tathā ratiḥ ||39||</l><note>(44)</note></lg>
+
+<lg xml:id="AmrShtk.40"><l>dīrghā vandanamālikā viracitā hṛṣṭyaiva nendīvaraiḥ</l>
+<l>puṣpāṇāṃ prakaraḥ smitena racito no kundajātyādibhiḥ |</l>
+<l>dattaḥ svedamucā payodharayuge nārghyo na kumbhāmbhasā</l>
+<l>svairevāvayavaiḥ priyasya viśatastanvyā kṛtaṃ maṅgalam ||40||</l><note>(45)</note></lg>
+
+<lg xml:id="AmrShtk.41"><l>kānte sāgasi śāyite priyasakhīveśaṃ vidhāyāgate</l>
+<l>bhrāntyāliṅgya mayā rahasyamuditaṃ tatsaṅgamākāṅkṣayā |</l>
+<l>mugdhe duṣkarametad ityatitarāmuktvā sahāsaṃ balād</l>
+<l>āliṅgya chalitāsmi tena kitavenādya pradoṣāgame ||41||</l><note>(46)</note></lg>
+
+<lg xml:id="AmrShtk.42"><l>āśaṅkya praṇatiṃ paṭāntapihitau pādau karotyādarāt</l>
+<l>vyājenāgatamāvṛṇoti hasitaṃ na spaṣṭamudvīkṣate |</l>
+<l>mayyālāpavati pratīpavacanaṃ sakhyā sahābhāṣate</l>
+<l>tasyāstiṣṭhatu nirbharapraṇayitā māno'pi ramyodayaḥ ||42||</l><note>(47)</note></lg>
+
+<lg xml:id="AmrShtk.43"><l>sā yāvanti padānyalīkavacanairālījanaiḥ śikṣitā</l>
+<l>tāvantyeva kṛtāgaso drutataraṃ vyāhṛtya patyuḥ puraḥ |</l>
+<l>prārabdhā purato yathā manasijasyājñā tathā vartituṃ</l>
+<l>premṇo maugdhyavibhūṣaṇasya sahajaḥ ko'pyeṣa kāntaḥ kramaḥ ||43||</l><note>(48)</note></lg>
+
+<lg xml:id="AmrShtk.44"><l>dūrādutsukamāgate vivalitaṃ sambhāṣiṇi sphāritaṃ</l>
+<l>saṃśliṣyatyaruṇaṃ gṛhītavasane kiñcin natabhrūlatam |</l>
+<l>māninyāścaraṇānativyatikare bāṣpāmbupūrṇekṣaṇaṃ</l>
+<l>cakṣurjātamaho prapañcacaturaṃ jātāgasi preyasi ||44||</l><note>(49)</note></lg>
+
+<lg xml:id="AmrShtk.45"><l>aṅgānāmatitānavaṃ kathamidaṃ kampaśca kasmātkuto</l>
+<l>mugdhe pāṇḍukapolamānanamiti prāṇeśvare pṛcchati |</l>
+<l>tanvyā sarvamidaṃ svabhāvajamiti vyāhṛtya pakṣmāntara</l>
+<l>vyāpī bāṣpabharastayā calitayā niḥśvasya mukto'nyataḥ ||45||</l><note>(50)</note></lg>
+
+<lg xml:id="AmrShtk.46"><l>purastanvyā gotraskhalanacakito'haṃ natamukhaḥ</l>
+<l>pravṛtto vailakṣyātkimapi likhituṃ daivahatakaḥ |</l>
+<l>sphuṭo rekhānyāsaḥ kathamapi sa tādṛk pariṇato</l>
+<l>gatā yena vyaktaṃ punaravayavaiḥ saiva taruṇī ||46||</l><note type="footnote">(51)*asya ślokasya parārdhaḥ:</note></lg>
+<del><lg>
+<l>tataścābhijñāya sphuradaruṇagaṇḍasthalarucā</l>
+<l>manasvinyā rūḍhapraṇayasahasodgadgadagirā |</l>
+<l>aho citraṃ citraṃ sphuṭamiti nigadyāśrukaluṣaṃ</l>
+<l>ruṣā brahmāstraṃ me śarasi nihito vāmacaraṇaḥ ||</l>
+</lg></del>
+
+<note>(gotraskhalitam, sad. 686)</note>
+
+<lg xml:id="AmrShtk.47"><l>kaṭhinahṛdaye muñca bhrāntiṃ vyalīkakathāśritāṃ</l>
+<l>piśunavacanairdukhaṃ netuṃ na yuktamimaṃ janam |</l>
+<l>kimidamathavā satyaṃ mugdhe tvayā hi viniścitaṃ</l>
+<l>yad abhirucitaṃ tan me kṛtvā priye sukhamāsyatām ||47||</l><note>(53)</note></lg>
+
+<lg xml:id="AmrShtk.48"><l>mandaṃ mudritapāṃśavaḥ paripatajjhaṅkārajhañjhāmarud</l>
+<l>vegadhvastakuṭīrakāntaragatacchidreṣu labdhāntarāḥ |</l>
+<l>karmavyagrakuṭumbinīkucataṭasvedacchidaḥ prāvṛṣaḥ</l>
+<l>prārambhe nipatanti kandaladalollāsāḥ payobindavaḥ ||48||</l><note type="footnote">*prakṣipto'yaṃ śloka iti arjunavarmadevapādāḥ|</note></lg>
+<lg xml:id="AmrShtk.49"><l>pītastuṣārakiraṇo madhunaiva sārdham</l>
+<l>antaḥ praviśya caṣake pratibimbavartī |</l>
+<l>mānāndhakāramapi mānavatījanasya</l>
+<l>nūnaṃ bibheda yad asau prasasāda sadyaḥ ||49||</l><note type="footnote">*rudramadevakumārasya ṭīkāyāmapyeṣa śloko dṛśyate|</note></lg>
+<note>(madhupānam, sad. 1089, subh. 2022, śā. 3648)</note>
+
+<lg xml:id="AmrShtk.50"><l>nabhasi jaladalakṣmīṃ sambhṛtāṃ vīkṣya diṣṭyā</l>
+<l>prasarasi yadi kāntetyardhamuktvā kathañcit |</l>
+<l>mama paṭamavalambya prollikhantī dharitrīṃ</l>
+<l>tadanukṛtavatī sā yatra vāco nivṛttāḥ ||50||</l><note type="footnote">*vemabhūpālasya ṭīkāyāmapyeṣa śloko dṛśyate|</note></lg>
+<lg xml:id="AmrShtk.51"><l>iyamasau taralāyatalocanā</l>
+<l>gurusamunnatapīnapayodharā |</l>
+<l>pṛthunitambabharālasagāminī</l>
+<l>priyatamā mama jīvitahāriṇī ||51||</l><note type="footnote">*prakṣipto'yaṃ śloka iti arjunavarmadevamahāśayāḥ|</note></lg>
+<lg xml:id="AmrShtk.52"><l>sālaktakena navapallavakomalena</l>
+<l>pādena nūpuravatā madanālasena |</l>
+<l>yastāḍyate dayitayā praṇayārādhāt</l>
+<l>so'ṅgīkṛto bhagavatā makaradhvajena ||52||</l><note type="footnote">*vemabhūpālasya ṭīkāyāmeṣa ślokaḥ kevalaṃ labhyate|</note></lg>
+<note>(anukūlanāyakaḥ, sad. 873, sū. 85.1)</note>
+
+<lg xml:id="AmrShtk.53"><l>bāle nātha vimuñca mānini ruṣaṃ roṣān mayā kiṃ kṛtaṃ</l>
+<l>khedo'smāsu na me'parādhyati bhavān sarve'parādhā mayi |</l>
+<l>tatkiṃ rodiṣi gadgadena vacasā kasyāgrato rudyate</l>
+<l>nanvetan mama kā tavāsmi dayitā nāsmītyato rudyate ||53||</l><note>(57)</note></lg>
+
+<note>(māninī, sad. 691, subh. 1614)</note>
+
+<lg xml:id="AmrShtk.54"><l>nītvoccairvikṣipantaḥ kṛtatuhinakaṇāsārasaṅgān parāgān</l>
+<l>kaundān ānanditālīn atitarasurabhīn bhūriśo diṅmukheṣu |</l>
+<l>ete te kuṅkumāktastanakalasabharāsphālanād ucchalantaḥ</l>
+<l>pītvā śītkārivaktraṃ śiśuharidṛśāṃ haimanā vānti vātāḥ ||54||</l><note type="footnote">*rudramadevakumārasya ṭīkāyāmapyeṣa śloko dṛśyate|</note></lg>
+<lg xml:id="AmrShtk.55"><l>śrutvā tanvyā niśīthe navaghanarasitaṃ viślathāṅkaṃ patitvā</l>
+<l>śayyāyāṃ bhūmipṛṣṭhe karataladhṛtayā duḥkhitālījanena |</l>
+<l>sotkaṇṭhaṃ muktakaṇṭhaṃ kaṭhinakucataṭāghātaśīrṇāśrubindu</l>
+<l>smṛtvā smṛtvā priyasya skhalitamṛduvaco rudyate pānthabadhvā ||55||</l><note>*rudramadevakumārasya ṭīkāyāmeṣa ślokaḥ kevalaṃ dṛśyate|</note></lg>
+<lg xml:id="AmrShtk.56"><l>śliṣṭaḥ kaṇṭhe kimiti na mayā mūḍhayā prāṇanāthaś</l>
+<l>cumbatyasmin vadanavidhutiḥ kiṃ kṛtā kiṃ na dṛṣṭaḥ |</l>
+<l>noktaḥ kasmād iti navavadhūceṣṭitaṃ cintayantī</l>
+<l>paścāttāpaṃ vahati taruṇī premṇi jāte rasajñā ||56||</l><note>(58)</note></lg>
+
+<note>(uccāvacaḥ, sad. 1369, subh. 2143)</note>
+
+<lg xml:id="AmrShtk.57"><l>śrutvā nāmāpi yasya sphuṭaghanapulakaṃ jāyate'ṅgaṃ samantāt</l>
+<l>dṛṣṭvā yasyānanenduṃ bhavati vapuridaṃ candrakāntānukāri |</l>
+<l>tasminnāgatya kaṇṭhagrahaṇasarabhasasthāyini prāṇanāthe</l>
+<l>bhagnā mānasya cintā bhavati mama pnarvajramayyāḥ kadā nu ||57||</l><note>(59)</note></lg>
+
+<lg xml:id="AmrShtk.58"><l>rāmāṇāṃ ramaṇīyavaktraśaśinaḥ svedodabindupluto</l>
+<l>vyālolālakavallarīṃ pracalayan dhunvan nitambāmbaram |</l>
+<l>prātarvāti madhau prakāmavikasadrājīvarājīrajo</l>
+<l>jālāmodamanoharo ratirasaglāniṃ haranmārutaḥ ||58||</l><note>*rudramadevakumārasya ṭīkāyāmapyeṣa śloko vartate|</note></lg>
+<note>(prābhātikavātaḥ; sad. 459)</note>
+
+<lg xml:id="AmrShtk.59"><l>aṅgaṃ candanapāṇḍupallavamṛdustāmbūlatāmrādharo</l>
+<l>dhārāyantrajalābhiṣekakaluṣe dhautāñjane locane |</l>
+<l>antaḥpuṣpasugandhirārdrakavarī sarvāṅgalagnāmbaraṃ</l>
+<l>romāṇāṃ ramaṇīyatāṃ vidadhati grīṣmāparāhvāgame ||59||</l><note type="footnote">*rudramadevakumārasya ṭīkāyāmapyeṣa śloko dṛśyate|</note></lg>
+<lg xml:id="AmrShtk.60"><l>varamasau divaso na punarniśā</l>
+<l>nanu niśaiva varaṃ na punardivā |</l>
+<l>ubhayametad upaitvathavā kṣayaṃ</l>
+<l>priyajanena na yatra samāgamaḥ ||60||</l><note type="footnote">*rudramadevakumārasya ṭīkāyāmeṣa ślokaḥ kevalaṃ labhyate|</note></lg>
+<lg xml:id="AmrShtk.61"><l>lolairlocanavāribhiḥ saśapathaiḥ pādapraṇāmaiḥ priyair</l>
+<l>anyāstā vinivārayanti kṛpaṇāḥ prāṇeśvaraṃ prasthitam |</l>
+<l>puṇyāhaṃ vraja maṅgalaṃ sudivasaṃ prātaḥ prayātasya te</l>
+<l>yatsnehocitamīhitaṃ priyatama tvaṃ nirgataḥ śroṣyasi ||61||</l><note>(61)</note></lg>
+
+<note>(yātrākṣepaḥ, sad. 735, s.v. 1060, śā. 3395, sū. 37.12)</note>
+
+<lg xml:id="AmrShtk.62"><l>lagnā nāṃśukapallave bhujalatā na dvāradeśe'pitā</l>
+<l>no vā pādatale tayā nipatitaṃ tiṣṭheti noktaṃ vacaḥ |</l>
+<l>kāle kevalamambudātimaline gantuṃ pravṛttaḥ śaṭhaḥ</l>
+<l>tanvyā bāṣpajalaughakalpitanadīpūreṇa baddhaḥ priyaḥ ||62||</l><note>(62)</note></lg>
+
+<note>(prasthānabhaṅgaḥ, sad. 922, subh. 1057, śā. 3388, sū. 37.5)</note>
+
+<lg xml:id="AmrShtk.63"><l>na jāne saṃmukhāyāte priyāṇi vadati priye |</l>
+<l>sarvāṇyaṅgāni me yānti śrotratāṃ kimu netratām ||63||</l><note>(64)</note></lg>
+
+<note>(nāyikābhilāṣaḥ, sad. 960)</note>
+
+<lg xml:id="AmrShtk.64"><l>virahaviṣamaḥ kāmo vāmastanuṃ kurute tanuṃ</l>
+<l>divasagaṇanād akṣaścāsau vyapetaghṛṇo yamaḥ |</l>
+<l>tvamapi vaśago mānavyādhervicintaya nātha he</l>
+<l>kiśalayamṛdurjīved evaṃ kathaṃ pramadājanaḥ ||64||</l><note>(67)</note></lg>
+
+<note>(mānināyakaḥ; sad. 898, subh. 1633, śā. 3572)</note>
+
+<lg xml:id="AmrShtk.65"><l>pādāsakte suciramiha te vāmatā kaiva kānte</l>
+<l>sanmārgasthe praṇayini jane kopane ko'parādhaḥ |</l>
+<l>itthaṃ tasyāḥ parjanakathā kopavegopaśāntau</l>
+<l>bāṣpodbhedaistad anu sahasā na sthitaṃ na prayātam ||65||</l><note>(68)</note></lg>
+
+<lg xml:id="AmrShtk.66"><l>purābhūdasmākaṃ niyatamavibhinnā tanuriyaṃ</l>
+<l>tato nu tvaṃ preyānvayamapi hatāśāḥ priyatamāḥ |</l>
+<l>idānīṃ nāthastvaṃ vayamapi kalatraṃ kimaparaṃ</l>
+<l>mayāptaṃ prāṇānāṃ kuliśakaṭhinānāṃ phalamidam ||66||</l><note>(69)</note></lg>
+
+<lg xml:id="AmrShtk.67"><l>mugdhe mudghatayaiva netumakhilaḥ kālaḥ kimārabhyate</l>
+<l>mānaṃ dhatsva dhṛtiṃ vadhāna ṛjutāṃ dūre kuru preyasi |</l>
+<l>sakhyaivaṃ pratibodhitā prativacastāmāha bhītānanā</l>
+<l>nīceḥ śaṃsa hṛdi sthito nanu sa me prāṇeśvaraḥ śroṣyati ||67||</l><note>(70)</note></lg>
+
+<lg xml:id="AmrShtk.68"><l>pīto yataḥ prabhṛti kāmapipāsitena</l>
+<l>tasyā mayādhararasaḥ pracuraḥ priyāyāḥ |</l>
+<l>tṛṣṇā tataḥ prabhṛti me dviguṇatvameti</l>
+<l>tāvaṇyamasti bahu tatra kimapi citram ||68||</l> <note type="footnote">*prakṣipto'yaṃ śloka iti arjunavarmadevamahāśayāḥ|</note></lg>
+<lg xml:id="AmrShtk.69"><l>kva prasthitāsi karabhoru ghane niśīthe</l>
+<l>prāṇādhiko vasati yatra janaḥ priyo me |</l>
+<l>ekākinī vada kathaṃ na bibheṣi bāle</l>
+<l>nanvasti puṅkhitaśaro madanaḥ sahāyaḥ ||69||</l><note>(71)</note></lg>
+
+<note>(su. 816)</note>
+
+<lg xml:id="AmrShtk.70"><l>līlāttāmarasāhato'nyavanitāniḥśaṅkadaṣṭādharaḥ</l>
+<l>kaścitkesaradūṣitekṣaṇa iva vyāmīlya netre sthitaḥ |</l>
+<l>mugdhā kudmalitānanena dadhato vāyuṃ sthitā tasya sā</l>
+<l>bhrāntyā dhūrtatayā ca vepathumatī tenāniśaṃ cumbitā ||70||</l><note>(72)</note></lg>
+
+<lg xml:id="AmrShtk.71"><l>sphuṭatu hṛdayaṃ kāmaṃ kāmaṃ karatu tanuṃ tanuṃ</l>
+<l>na sakhi caṭulapremṇā kāryaṃ punardayitena me |</l>
+<l>iti sarabhasaṃ mānāṭopād udīrya vacastayā</l>
+<l>ramaṇapadavī sāraṅgākṣyā saśaṅkitamīkṣitā ||71||</l> <note>(73)</note></lg>
+
+<note>(anuraktamāninī; su. 666, sad. 705, sū. 55.1)</note>
+
+<lg xml:id="AmrShtk.72"><l>gāḍhāśleṣaviśīrṇacandanarajaḥpuñjaprakarṣādiyaṃ</l>
+<l>śayyā samprati komalāṅgi paruṣetyāropya māṃ vakṣasi |</l>
+<l>gāḍhauṣṭhagrahapūrvamākulatayā pādāgrasaṃdaṃśake-</l>
+<l>nākṛṣyāmbaramātmano yaducitaṃ dhūrtena tatprastutam ||72||</l><note>(74)</note></lg>
+
+<lg xml:id="AmrShtk.73"><l>kathamapi kṛtapratyākhyāne priye skhalitottare</l>
+<l>virahakṛśayā kṛtvā vyājaṃ prakalpitamaśrutaṃ |</l>
+<l>asahanasakhīśrotraprāptipramādasasaṃbhramaṃ</l>
+<l>vigalitadṛśā śūnye gehe samucchvasitaṃ punaḥ ||73||</l><note>(75)</note></lg>
+
+<lg xml:id="AmrShtk.74"><l>ādṛṣṭiprasarātpriyasya padavīmudvīkṣya nirviṇṇayā</l>
+<l>vicchinneṣu pathiṣvahaḥpariṇatau dhvānte samutsarpati |</l>
+<l>dattaikaṃ saśucā gṛhaṃ prati padaṃ pānthastriyāsminkṣaṇe</l>
+<l>mā bhūdāgata ityamandavalitagrīvaṃ punarvīkṣitam ||74||</l><note>(76)</note></lg>
+
+<lg xml:id="AmrShtk.75"><l>āyāte dayite manorathaśatairnītvā kathaṃciddinaṃ</l>
+<l>vaidagdhyāpagamājjaḍe parijane dīrghāṃ kathāṃ kurvati |</l>
+<l>daṣṭāsmītyabhidhāya satvarapadaṃ vyādhūya cīnāṃśukaṃ</l>
+<l>tanvaṅgyā ratikātareṇa manasā nītaḥ pradīpaḥ śamam ||75||</l><note>(77)</note></lg>
+
+<lg xml:id="AmrShtk.76"><l>ālambyāṅgaṇavāṭikāparisare cūtadrume mañjarīṃ</l>
+<l>sarpatsāndraparāgalampaṭaraṭadbhṛṅgāṅganāśobhinīm |</l>
+<l>manye svāṃ tanumuttarīyaśakalenācchādya bālā sphurat-</l>
+<l>kaṇṭhadhvānanirodhakampitakucaśvāsodgamā roditi ||76||</l><note>(78)</note></lg>
+
+<lg xml:id="AmrShtk.77"><l>yāsyāmiti samudyatasya gaditaṃ visrabdhamākarṇitaṃ</l>
+<l>gacchandūramupekṣito muhurasau vyāvṛtya tiṣṭhannapi |</l>
+<l>tacchūnye punarāsthitāsmi bhavane prāṇāsta ete dṛḍhāḥ</l>
+<l>sakhyastiṣṭhata jīvitavyasaninī dambhādahaṃ rodimi ||77||</l><note>(79)</note></lg>
+
+<lg xml:id="AmrShtk.78"><l>śūnyaṃ vāsagṛhaṃ vilokya śayanādutthāya kiṃcicchanair</l>
+<l>nidrāvyājamupāgatasya suciraṃ nirvarṇya patyurmukham |</l>
+<l>visrabdhaṃ paricumbya jātapulakāmālokya gaṇḍastalīṃ</l>
+<l>lajjānamramukhī priyeṇa hasatā bālā ciraṃ cumbitā ||78||</l><note>(82)</note></lg>
+
+<lg xml:id="AmrShtk.79"><l>loladbhrūlatayā vipakṣadigupanyāse'vadhūtaṃ śiras</l>
+<l>tadvṛttāntanirīkṣaṇe kṛtanamaskāro vilakṣaḥ sthitaḥ |</l>
+<l>kopāttāmrakapolabhittini mukhe dṛṣṭyā gataḥ pādayor</l>
+<l>utsṛṣṭo gurusannidhāvapi vidhirdvābhyāṃ na kālocitaḥ ||79||</l><note>(83)</note></lg>
+
+<lg xml:id="AmrShtk.80"><l>jātā notkalikā stanau na lulitau gātraṃ na romāñcitaṃ</l>
+<l>vaktraṃ svedakaṇānvita na sahasā yāvacchaṭhenāmunā |</l>
+<l>dṛṣṭenāva mano hṛtaṃ dhṛtimuṣā prāṇeśvareṇādya me</l>
+<l>tatkenātra nirūpyamāṇanipuṇo mānaḥ samādhīyatām ||80||</l><note>(84)</note></lg>
+
+<lg xml:id="AmrShtk.81"><l>dṛṣṭaḥ kātaranetrayā cirtaraṃ baddhāñjaliṃ yācit</l>
+<l>paścādaṃśukapallavena vidhṛto nirvyājamāliṅgitaḥ |</l>
+<l>ityākṣipya yadā samastamaghṛṇo gantuṃ pravṛttaḥ śaṭhaḥ</l>
+<l>pūrvaṃ prāṇaparigraho dayitayā muktastato vallabhaḥ ||81||</l><note>(85)</note></lg>
+
+<lg xml:id="AmrShtk.82"><l>kṛto dūrādeva smitamadhuramabhyudgamavidhiḥ</l>
+<l>śirasyājñā nyastā prativacanavatyānatimati |</l>
+<l>na dṛṣṭeḥ śaithilyaṃ milana iti ceto dahati me</l>
+<l>nigūḍhāntaḥkopātkaṭhiṇahṛdaye saṃvṛtiriyam ||82||</l><note>(14)</note></lg>
+
+<lg xml:id="AmrShtk.83"><l>ekasmiñśayane vipakṣaramaṇīnāmagrahe mugdhayā</l>
+<l>sadyaḥ kopaparāṅmukhaṃ śayitayā cāṭūni kurvannapi |</l>
+<l>āvegādavadhīritaḥ priyatamastūṣṇīṃ sthitastatkṣaṇāt</l>
+<l>mā bhūssupta ivaiṣa mandavalitagrīvaṃ punarvīkṣitaḥ ||83||</l><note>(22)</note></lg>
+
+<lg xml:id="AmrShtk.84"><l>malayamarutāṃ vrātā yātā vikāsitamallikā</l>
+<l>parimalabharo bhagno grīṣmastvamutsahase yadi |</l>
+<l>ghana ghaṭayituṃ nisnehaṃ tvāṃ ya eva nivartane</l>
+<l>prabhavati gavāṃ kinnaśchinnaṃ sa eva dhanañjayaḥ ||84||</l><note>(32)</note></lg>
+
+<lg xml:id="AmrShtk.85"><l>svaṃ dṛṣṭvā karajakṣataṃ madhumadakṣīvā vicāryerṣyayā</l>
+<l>gacchantī kva nu gacchasīti vidhṛtā bālā paṭānte mayā |</l>
+<l>pratyāvṛttamukhī sabāṣpanayanā māṃ muñca muñceti sā</l>
+<l>kopātprasphuritādharā yadavadattatkena vismaryate ||85||</l><note>(55)</note></lg>
+
+<lg xml:id="AmrShtk.86"><l>sālaktakaṃ śatadalādhikakāntiramyaṃ</l>
+<l>ratnaughadhāmanikarāruṇanūpuraṃ ca |</l>
+<l>kṣiptaṃ bhṛśaṃ kupitayā taralotpalākṣyā</l>
+<l>saubhāgyacihnamiva mūrdhni padaṃ vireje ||86||</l> <note type="footnote">*prakṣipto'yaṃ śloka iti arjunavarmadevamahāśayāḥ|</note></lg>
+<lg xml:id="AmrShtk.87"><l>kapole patrālī karatalanirodhena mṛditā</l>
+<l>nipīto niḥśvāsairayamamṛtahṛdyo'dhararasaḥ |</l>
+<l>muhuḥ kaṇṭhe lagnastaralayati bāṣpaḥ stanataṭaṃ</l>
+<l>priyo manyurjātastava niranurodhe na tu vayam ||87||</l> <note>(81)</note></lg>
+
+<note>(anunayaḥ, su. 664, sad. 720, s.k.v. 489, subh. 1627)</note>
+
+<lg xml:id="AmrShtk.88"><l>lākṣālakṣmalalāṭapaṭṭamabhitaḥ keyūramudrā gale</l>
+<l>vaktre kajjalakālimā nayanayorstāmbūlarāgo ghanaḥ |</l>
+<l>dṛṣṭā kopavidhāyi maṇḍanamidaṃ prātaściraṃ preyaso</l>
+<l>līlātāmarasodare mṛgadṛśaḥ śvāsāḥ samāptiṃ gatāḥ ||88||</l> <note>(60)</note></lg>
+
+<note>(anyaraticihnaduḥkhitā; sad. 594; śā. 3740, subh. 2215; sū. 82.17; pad. 222; daśarūpaka 2.6)</note>
+<lg xml:id="AmrShtk.89"><l>tapte mahāvirahavahniśikhāvalībhir</l>
+<l>āpāṇḍurastanataṭe hṛdaye priyāyāḥ |</l>
+<l>rathyālivīkṣaṇaniveśitaloladṛṣṭer</l>
+<l>nūnaṃ chanacchaniti bāṣpakaṇāḥ patanti ||89||</l><note>(86)</note></lg>
+
+<lg xml:id="AmrShtk.90"><l>cintāmohaviniścalena manasā maunena pādānataḥ</l>
+<l>pratyākhyānaparāṅmukhaḥ priyatamo gantuṃ pravṛtto'dhunā |</l>
+<l>savrīḍairalasairnirantaraluṭhadbāṣpākulairlocanaiḥ</l>
+<l>śvāsotkampakucaṃ nirīkṣya suciraṃ jīvāśayā vāritaḥ ||90||</l><note>(87)</note></lg>
+
+<lg xml:id="AmrShtk.91"><l>tanvaṅgyā gurusannidhau nayanajaṃ yad vāri saṃstambhitaṃ</l>
+<l>tenāntargalitena manmathaśikhī sikto'nuṣaṅgodbhavaḥ |</l>
+<l>manye tasya nirasyamānakiraṇasyaiṣā mukhenodgatā</l>
+<l>śvāsāmodasamākulālinikaravyājena dhūmāvaliḥ ||91||</l><note>(96)</note></lg>
+
+<lg xml:id="AmrShtk.92"><l>bhrūbhedo racitaḥ ciraṃ nayanayorabhyastamāmīlanaṃ</l>
+<l>roddhuṃ śikṣitamādareṇa hasitaṃ maune'bhiyogaḥ kṛtaḥ |</l>
+<l>dhairyaṃ kartumapi sthirīkṛtamidaṃ cetaḥ kathañcin mayā</l>
+<l>baddho mānaparigrahe parikaraḥ siddhistu daivasthitā ||92||</l><note type="footnote">(97)*rūpagosvāmipādasya padyāvalyām (231) etasya ślokasyaiṣa rūpaḥ:</note>
+</lg>
+<del><l>bhrūbhaṅgo guṇitaściraṃ nayanayorabhyastamāmīlanaṃ</l>
+<l>roddhuṃ śikṣitamādareṇa hasitaṃ maune'bhiyogaḥ kṛtaḥ |</l>
+<l>dhairyaṃ kartumapi sthirīkṛtamidaṃ cetaḥ kathañcin mayā</l>
+<l>baddho mānaparigrahe parikaraḥ siddhistu daive sthitā ||</l>
+</del>
+
+<note>(anuraktamāninī, su. 645, sad. 703, pad. 231)</note>
+
+<lg xml:id="AmrShtk.93"><l>deśairantaritā śataiśca saritāmurvībhṛtāṃ kānanair</l>
+<l>yatnenāpi na yāti locanapathaṃ kānteti jānannapi |</l>
+<l>udgrīvaścaraṇārdharuddhavasudhaḥ kṛtvāśrupūrṇāṃ dṛśaṃ</l>
+<l>tāmāśāṃ pathikastathāpi kimapi dhyāyaṃściraṃ vīkṣate ||93||</l> <note>(99)</note></lg>
+
+<note>(proṣitaḥ, su. 765, sad. 901, śā. 3445)</note>
+
+<lg xml:id="AmrShtk.94"><l>mlānaṃ pāṇḍu kṛśaṃ viyogavidhuraṃ lambālakaṃ sālasaṃ</l>
+<l>bhūyastatkṣaṇajātakānti rabhasaprāpte mayi proṣite |</l>
+<l>sāṭopaṃ ratikelikālasarasaṃ ramyaṃ kimapyādarād</l>
+<l>yatpītaṃ sutanormayā vadanakaṃ vaktuṃ na tatpāryate ||94||</l><note>(88)</note></lg>
+
+<lg xml:id="AmrShtk.95"><l>saivāhaṃ pramadā nṛṇāmadhigatāvetau ca tau nūpurāv</l>
+<l>eṣāsmākamavṛttireva sahajavrīḍādhanaḥ strījanaḥ |</l>
+<l>itthaṃ lajjitayā smṛterupagame matvā tanuṃ sambhramāt</l>
+<l>pumbhāvaḥ prathamaṃ rativyatikare muktastato vallabhaḥ ||95||</l><note>(89)</note></lg>
+
+<lg xml:id="AmrShtk.96"><l>karakisalayaṃ dhūtvā dhūtvā vimārgati vāsasī</l>
+<l>kṣipati sumanomālāśeṣaṃ pradīpaśikhāṃ prati |</l>
+<l>sthagayati muhuḥ patyurnetre vihasya samākulā</l>
+<l>surataviratā ramyā tanvī muhurmuhurīkṣate ||96||</l><note>(90)</note></lg>
+
+<lg xml:id="AmrShtk.97"><l>santyevātra gṛhe gṛhe yuvatayastāḥ pṛccha gatvādhunā</l>
+<l>preyāṃsaḥ praṇamanti kiṃ tava punardāso yathā vartate |</l>
+<l>ātmadrohiṇi durjanaiḥ pralapitaṃ karṇe'niśaṃ mā kṛthāś</l>
+<l>chinnasneharasā bhavanti puruṣā duḥkhānuvartyāḥ punaḥ ||97||</l><note>(91)</note></lg>
+
+<lg xml:id="AmrShtk.98"><l>niḥśvāsā vadanaṃ dahanti hṛdayaṃ nirmūlamunmathyate</l>
+<l>nidrā neti na dṛśyate priyamukhaṃ rātrindivaṃ rudyate |</l>
+<l>aṅgaṃ śoṣamupaiti pādapatitaḥ preyāṃstathopekṣitaḥ</l>
+<l>sakhyaḥ kaṃ guṇamākalayya dayite mānaṃ vayaṃ kāritāḥ ||98||</l> <note>(92)</note></lg>
+
+<note>(pad. 237, sad. 677; daśarūpaka 2.26)</note>
+
+<lg xml:id="AmrShtk.99"><l>adyārabhya yadi priye punarahaṃ mānasya vā'nyasya vā</l>
+<l>gṛhṇīyāṃ śaṭhadurnayena manasā nāmāpi saṃkṣepataḥ |</l>
+<l>tattenaiva vinā śaśāṅkadhavalāḥ spaṣṭāṭṭahāsā niśā</l>
+<l>eko vā divasaḥ payodamalino yāyānmama prāvṛṣi ||99||</l><note>(93)</note></lg>
+
+<lg xml:id="AmrShtk.100"><l>idaṃ kṛṣṇaṃ kṛṣṇaṃ priyatama tanu śvetamatha kiṃ</l>
+<l>gamiṣyāmo yāmo bhavatu gamanenātha bhavatu |</l>
+<l>purā yenāvaṃ me ciramanusṛtā cittapadavī</l>
+<l>sa evānyo jātaḥ sakhi paricitāḥ kasya puruṣāḥ ||100||</l><note>(94)</note></lg>
+
+<lg xml:id="AmrShtk.101"><l>caraṇapatanaṃ sakhyālāpā manoharacāṭavaḥ</l>
+<l>kṛśataratanorgāḍhāśleṣo haṭhātparicumbanam |</l>
+<l>iti hi capalo mānārambhastathāpi hi notsahe</l>
+<l>hṛdayadayitaḥ kāntaḥ kāmaṃ kimatra karomyaham ||101||</l><note>(95)</note></lg>
+
+<lg xml:id="AmrShtk.102"><l>ahaṃ tenāhūtā kimapi kathayāmīti vijane</l>
+<l>samīpe cāsīnā sarasahṛdayatvādavahitā |</l>
+<l>tataḥ karṇopānte kimapi vadatāghrāya vadanaṃ</l>
+<l>gṛhītā dharmille sakhi sa ca mayā gāḍhamadhare ||102||</l><note>(98)</note></lg>
+
+<lg xml:id="AmrShtk.103"><l>cakṣuḥprītiprasakte manasi paricaye cintyamānābhyupāye</l>
+<l>rāge yāte'tibhūmiṃ vikasati sutarāṃ gocare dūtikāyāḥ |</l>
+<l>āstāṃ dūreṇa tāvatsarabhasadayitāliṅganānandalābhas</l>
+<l>tadgehopāntarathyābhramaṇamapi parāṃ nirvṛtiṃ santanoti ||103||</l><note>(100)</note></lg>
+
+<lg xml:id="AmrShtk.104"><l>kānte talpamupāgate vigalitā nīvī svayaṃ bandhanād</l>
+<l>vāso viślathamekhalāguṇadhṛtaṃ kiṃcinnitambe sthitam |</l>
+<l>etāvatsakhi vedmi sāmpratamahaṃ tasyāṅgasaṅge punaḥ</l>
+<l>ko'yaṃ kāsmi rataṃ nu vā kathamiti svalpāpi me na smṛtiḥ ||104||</l><note>(101)</note></lg>
+
+<lg xml:id="AmrShtk.105"><l>prāsāde sā diśi diśi ca sā pṛṣṭhataḥ sā puraḥ sā</l>
+<l>paryaṅke sā pathi pathi ca sā tadviyogāturasya |</l>
+<l>haṃho cetaḥ prakṛtiraparā nāsti me kāpi sā sā</l>
+<l>sā sā sā sā jagati sakale ko'yamadvaitavādaḥ ||105||</l><note>(102)</note></lg>
+
+<lg xml:id="AmrShtk.106"><l>anālocya premṇaḥ pariṇatimanādṛtya suhṛdas</l>
+<l>tvayākāṇḍe mānaḥ kimiti sarale preyasi kṛtaḥ |</l>
+<l>samākṛṣṭā hyete virahadahanodbhāsuraśikhāḥ</l>
+<l>svahastenāṅgārāstad alamadhunāraṇyaruditaiḥ ||106||</l> <note>(80)</note></lg>
+
+<note>(subh. 1170; sad. 2.42.1, sū. 56.9, su. 659)</note>
+
+<note>Verses found in Arjunavarmadeva's version not found here</note>
+
+<note>
+<l>aṅgulyagranakhena bāṣpasalilaṃ vikṣipya vikṣipya kiṃ</l>
+<l>tūṣṇīṃ rodiṣi kopane bahutaraṃ phūtkṛtya rodiṣyasi |</l>
+<l>yasyāste piśunopadeśavacanairmāne'tibhūmiṃ gate</l>
+<l>nirviṇṇo'nunayaṃ prati priyatamo madhyasthatāmeṣyate ||(5)</l>
+</note>
+
+<note>
+<l>tadvaktrābhimukhaṃ mukhaṃ vinamitaṃ dṛṣṭiḥ kṛtā pādayos</l>
+<l>tasyālāpakutūhalākulatare śrotre niruddhe mayā |</l>
+<l>pāṇibhyāṃ ca tiraskṛtaḥ sapulakaḥ svedodgamo gaṇḍayoḥ</l>
+<l>sakhyaḥ kiṃ karavāṇi yānti śatadhā yatkañcuke sandhayaḥ ||(11)</l>
+</note>
+
+<note>
+<l>nāpeto'nunayena yaḥ priyasuhṛdvākyairna yaḥ saṃhṛto</l>
+<l>yo dīrghaṃ divasaṃ viṣahya viṣamaṃ yatnātkathaṃciddhṛtaḥ |</l>
+<l>anyonyasya hṛte mukhe nihitayostiryakkathaṃciddṛśoḥ</l>
+<l>sa dvābhyāmativismṛtavyatikaro māno vihasyojjhitaḥ ||(42)</l>
+</note>
+
+<note>
+<l>rātrau vāribharālasāmbudaravodvignena jātāśruṇā</l>
+<l>pānthenātmaviyogaduḥkhapiśunaṃ gītaṃ tathotkaṇṭhayā |</l>
+<l>āstāṃ jīvitahāriṇaḥ pravasanālāpasya saṃkīrtanaṃ</l>
+<l>mānasyāpi jalāñjaliḥ sarabhasaṃ lokena datto yathā ||(54)</l>
+</note>
+
+<note>
+<l>capalahṛdayae kiṃ svātantryāttathā gṛhamāgataś</l>
+<l>caraṇapatitaḥ premārdrārdraḥ priyaḥ samupekṣitaḥ |</l>
+<l>tadidamadhunā yāvajjīvaṃ nirastasukhodayā</l>
+<l>ruditaśaraṇā durjātānāṃ sahasva ruṣāṃ phalam ||(56)</l>
+</note>
+
+<note>
+<l>āstāṃ viśvasanaṃ sakhīṣu viditābhiprāyasāre jane</l>
+<l>tatrāpyarpayituṃ dṛśaṃ suracitāṃ śaknomi na vrīḍayā |</l>
+<l>loko'pyeṣa paropahāsacaturaḥ sūkṣmeṅgitajño'pyalaṃ</l>
+<l>mātaḥ kaṃ śaraṇaṃ vrajāmi hṛdaye jīrṇo'nurāgānalaḥ ||(63)</l>
+</note>
+
+<note>
+<l>analpacintābharamohaniścalā vilokyamānaiva karoti sādhvasam |</l>
+<l>svabhāvaśobhānatimātrabhūṣaṇā tanustaveyaṃ bata kiṃ nu sundari ||(65)</l>
+</note>
+<note>
+<l>iti priye pṛcchati mānavihvalā kathaṃcidantardhṛtabāṣpagadgadam |</l>
+<l>na kiṃcidityeva jagāda yadvadhūḥ kiyanna tenaiva tayāsya varṇitam ||(66)</l>
+</note>
+</body>
+</text>
+</TEI>
